@@ -232,3 +232,140 @@ Sample Response:
   "message": "Logout was successfull",
 }
 ```
+## Create Room
+- endpoint: {base url}/api/v1/rooms
+- method: post
+
+Sample Request:
+```
+{
+  "name": "400",
+  "roomType": "63f4a4582e855d5dc2ee22b3",
+  "floor": 5,
+  "capacity": 2,
+  "price": 500000
+}
+```
+Sample Response:
+```
+{
+  "message": "Room created successfully",
+  "success": true,
+  "data": {
+    "name": "4005",
+    "roomType": "63f4a4582e855d5dc2ee22b3",
+    "price": 500000,
+    "floor": 5,
+    "capacity": 2,
+    "amenities": [],
+    "booked": false,
+    "_id": "63fd30c566428610c8c2d080",
+    "__v": 0
+  }
+}
+```
+## Get all Rooms
+- endpoint: {base url}/api/v1/rooms
+- method: get
+
+Sample Response:
+```
+{
+  "message": "Rooms fetched successfully",
+  "success": true,
+  "data": [
+    {
+      "_id": "63fcd72798e3986a5f57f219",
+      "name": "400",
+      "roomType": "63f4a4582e855d5dc2ee22b3",
+      "price": 500000,
+      "floor": 5,
+      "capacity": 2,
+      "amenities": [],
+      "booked": false
+    },
+    {
+      "_id": "63fd30c566428610c8c2d080",
+      "name": "4005",
+      "roomType": "63f4a4582e855d5dc2ee22b3",
+      "price": 500000,
+      "floor": 5,
+      "capacity": 2,
+      "amenities": [],
+      "booked": false
+    }
+  ]
+}
+```
+## Get a Room
+- endpoint: {base url}/api/v1/rooms/:id
+- method: get
+
+Sample Response:
+```
+{
+  "message": "Room fetched successfully",
+  "success": true,
+  "data": {
+    "_id": "63fcd72798e3986a5f57f219",
+    "name": "400",
+    "roomType": "63f4a4582e855d5dc2ee22b3",
+    "price": 500000,
+    "floor": 5,
+    "capacity": 2,
+    "amenities": [],
+    "booked": false
+  }
+}
+```
+## Edit a Room Details with id
+- endpoint: {base url}/api/v1/rooms/:id
+- method: patch
+
+Sample Request(Any fields can be added or omitted):
+```
+{
+  "name": "4000",
+  "price": 500000
+}
+```
+Sample Response:
+```
+{
+  "success": true,
+  "message": "Room updated successfully",
+  "data": {
+    "_id": "63fcd72798e3986a5f57f219",
+    "name": "4000",
+    "roomType": "63f4a4582e855d5dc2ee22b3",
+    "price": 500000,
+    "floor": 5,
+    "capacity": 2,
+    "amenities": [],
+    "booked": false,
+    "__v": 0
+  }
+}
+```
+## Delete a Room
+- endpoint: {base url}/api/v1/rooms/:id
+- method: delete
+
+Sample Response:
+```
+{
+  "message": "Room deleted successfully",
+  "success": true,
+  "data": {
+    "_id": "63fcd72798e3986a5f57f219",
+    "name": "4000",
+    "roomType": "63f4a4582e855d5dc2ee22b3",
+    "price": 500000,
+    "floor": 5,
+    "capacity": 2,
+    "amenities": [],
+    "booked": false,
+    "__v": 0
+  }
+}
+```
