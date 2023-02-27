@@ -2,10 +2,10 @@
   "name": "hotel-management-api",
   "version": "1.0.0",
   "description": "A simple API for managing hotel operations. It provides services for managing rooms and room types. Documentation and code samples are available to help you get started quickly. The API has two main components: Room and Room Type.",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "build": "tsc",
-    "start": "node src/app.js"
+    "start": "node build/app.js"
   },
   "keywords": [],
   "author": "",
