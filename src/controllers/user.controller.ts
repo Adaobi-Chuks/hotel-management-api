@@ -163,11 +163,11 @@ export default class UserController {
         });
     }
 
-    async logout(req: Request, res: Response) {
-        res.cookie("token", '', {httpOnly: true, maxAge: 1 });
-        return res.status(200).send({
-            success: true,
-            message: LOGIN
-        });
-    }
+    // async logout(req: Request, res: Response) {
+    //     res.cookie("token", '', {httpOnly: true, maxAge: 1 });
+    //     return res.status(200).send({
+    //         success: true,
+    //         message: LOGIN
+    //     });
+    // }
 }

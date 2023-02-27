@@ -1,0 +1,3 @@
+buildCommand: yarn build
+buildImage: node:16
+startCommand: yarn start
