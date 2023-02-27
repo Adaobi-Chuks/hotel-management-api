@@ -60,7 +60,7 @@ export default class UserController {
 
     async getUsers(req: Request, res: Response) {
         const users = await getAllUsers();
-        res.status(200).send({
+        return res.status(200).send({
           success: true,
           message: FETCHEDALL,
           data: users
@@ -163,11 +163,11 @@ export default class UserController {
         });
     }
 
-    // async logout(req: Request, res: Response) {
-    //     res.cookie("token", '', {httpOnly: true, maxAge: 1 });
-    //     return res.status(200).send({
-    //         success: true,
-    //         message: LOGIN
-    //     });
-    // }
+    async logout(req: Request, res: Response) {
+        res.cookie("token", '', {httpOnly: true, maxAge: 1 });
+        return res.status(200).send({
+            success: true,
+            message: LOGIN
+        });
+    }
 }
