@@ -43,6 +43,7 @@ https://localhost:5000
 ## Create User
 - endpoint: {base url}/api/v1/users/signup
 - method: post
+
 Sample Request:
 ```
 {
@@ -79,6 +80,7 @@ Sample Response:
 ## Get all Users
 - endpoint: {base url}/api/v1/users
 - method: get
+
 Sample Response:
 ```
 {
@@ -113,6 +115,7 @@ Sample Response:
 ## Get a User
 - endpoint: {base url}/api/v1/users/:id
 - method: get
+
 Sample Response:
 ```
 {
@@ -134,6 +137,7 @@ Sample Response:
 ## Edit a User's Details
 - endpoint: {base url}/api/v1/users/:id
 - method: patch
+
 Sample Request(Any fields can be added or omitted):
 ```
 {
@@ -165,6 +169,7 @@ Sample Response:
 ## Delete a User
 - endpoint: {base url}/api/v1/users/:id
 - method: delete
+
 Sample Response:
 ```
 {
@@ -187,6 +192,7 @@ Sample Response:
 ## Login a User
 - endpoint: {base url}/api/v1/users/login
 - method: post
+
 Sample Request:
 ```
 {
@@ -218,6 +224,7 @@ Sample Response:
 ## Logout a User
 - endpoint: {base url}/api/v1/users/logout
 - method: get
+
 Sample Response:
 ```
 {
