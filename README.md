@@ -369,3 +369,77 @@ Sample Response:
   }
 }
 ```
+## Create Room Type
+- endpoint: {base url}/api/v1/rooms-types
+- method: post
+
+Sample Request:
+```
+{
+  "name":"Deluxe"
+}
+```
+Sample Response:
+```
+{
+  "message": "Roomtype created successfully",
+  "success": true,
+  "data": {
+    "name": "deluxe",
+    "_id": "63fd32f266428610c8c2d08a",
+    "__v": 0
+  }
+}
+```
+## Get all Rooms Types
+- endpoint: {base url}/api/v1/rooms-types
+- method: get
+
+Sample Response:
+```
+{
+  "message": "Roomtype fetched successfully",
+  "success": true,
+  "data": [
+    {
+      "_id": "63f4a4582e855d5dc2ee22b3",
+      "name": "Standard"
+    },
+    {
+      "_id": "63fd32f266428610c8c2d08a",
+      "name": "deluxe"
+    }
+  ]
+}
+```
+## Get a Room Type
+- endpoint: {base url}/api/v1/rooms-type/:id
+- method: get
+
+Sample Response:
+```
+{
+  "success": true,
+  "message": "Roomtype fetched successfully",
+  "data": {
+    "_id": "63fd32f266428610c8c2d08a",
+    "name": "deluxe"
+  }
+}
+```
+## Delete a Room Type
+- endpoint: {base url}/api/v1/rooms-type/:id
+- method: delete
+
+Sample Response:
+```
+{
+  "message": "Roomtype deleted successfully",
+  "success": true,
+  "data": {
+    "_id": "63fd32f266428610c8c2d08a",
+    "name": "deluxe",
+    "__v": 0
+  }
+}
+```

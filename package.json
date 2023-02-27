@@ -10,6 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  
   "dependencies": {
     "@types/cookie-parser": "^1.4.3",
     "@types/node": "^18.14.1",
@@ -22,6 +23,7 @@
     "mongoose": "^6.10.0",
     "nodemon": "^2.0.20"
   },
+
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
