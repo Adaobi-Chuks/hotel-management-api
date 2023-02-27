@@ -1,7 +1,7 @@
 # HOTEL API
 
 # Overview
-A simple API for managing hotel operations. It provides services for managing users, rooms and room types. The API has three main components: Users, Room and Room Type.
+An API for managing hotel operations. It provides services for managing users, rooms and room types. The API has three main components: Users, Room and Room Type.
 
 ## User
 The User component represents a type of user available in a hotel. A User has the following properties:
